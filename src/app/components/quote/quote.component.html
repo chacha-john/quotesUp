@@ -1,6 +1,6 @@
 <div class="row">
     <div class="container col-md-8 mt-2">
-        <h2 class="text-center">Insight that Inspires</h2>
+        <h2 class="text-center">Inspiration that will help you succeed</h2>
         <ul *ngFor="let quote of quotes, let i = index">
             <div *ngIf="quote.upvotes == highest && quote.upvotes>0; then highlight else empty"></div>
             <ng-template #highlight>

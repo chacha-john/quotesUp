@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { RandomQuoteDirective } from './directives/random-quote.directive';
 import { DateCountPipe } from './pipes/date-count.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { HighlightDirective } from './directives/highlight.directive';
     RandomQuoteDirective,
     DateCountPipe,
     HighlightDirective,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
