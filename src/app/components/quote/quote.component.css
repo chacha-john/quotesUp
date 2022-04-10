@@ -8,3 +8,9 @@ li{
 ul{
     list-style-type: none;
 }
+.quote{
+    font-style: italic;
+}
+.details p, .close{
+    cursor: pointer;
+}

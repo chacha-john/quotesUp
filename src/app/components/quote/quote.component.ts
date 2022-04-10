@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Quote } from 'src/app/classes/quote';
 
 @Component({
@@ -9,6 +9,17 @@ import { Quote } from 'src/app/classes/quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[]
+  toggleDetails(index:number){
+    this.quotes[index].showDetails = !this.quotes[index].showDetails
+  }
+  // @Output() toDelete = new EventEmitter<boolean>()
+
+  deleteQuote(index:number){
+    if(confirm(`Are you sure you want to delete the quote "${this.quotes[index].quote}"?`)){
+      this.quotes.splice(index,1)
+    }
+    // this.toDelete.emit(toRemove)
+  }
   constructor() { 
     this.quotes = [
       new Quote(1,"small daily, seeming insignificant, improvements when done consistently over time yield staggerring results","robin sharma","chacha"),
