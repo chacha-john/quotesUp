@@ -8,7 +8,7 @@ import { Quote } from 'src/app/classes/quote';
 })
 export class QuoteComponent implements OnInit {
 
-  quotes: Quote[]
+  quotes: Quote[]=[]
   toggleDetails(index:number){
     this.quotes[index].showDetails = !this.quotes[index].showDetails
   }
@@ -25,6 +25,7 @@ export class QuoteComponent implements OnInit {
     quote.id = quoteLength+1
     this.quotes.push(quote)
   }
+  highest = Math.max(...this.quotes.map(quote=>quote.upvotes))
   constructor() { 
     this.quotes = [
       new Quote(1,"small daily, seeming insignificant, improvements when done consistently over time yield staggerring results","robin sharma","chacha"),
