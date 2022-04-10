@@ -1,6 +1,9 @@
 <div class="container-fluid col-md-12 mt-2">
     <h2 class="text-center">Insight that Inspires</h2>
     <ul *ngFor="let quote of quotes">
-        <li>{{quote.quote}}</li>
+        <li class="row">
+            <div class="quote col-md-10">{{quote.quote}}</div>
+            <div class="details col-md-2"><app-quote-details></app-quote-details></div>
+        </li>
     </ul>
 </div>
