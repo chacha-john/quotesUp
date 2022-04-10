@@ -1,0 +1,10 @@
+li{
+    font-size: x-large;
+    margin: 2%;
+    padding: 2%;
+    box-shadow: 2px 2px 10px gray;
+    border-radius: 10px;
+}
+ul{
+    list-style-type: none;
+}
