@@ -6,6 +6,7 @@ export class Quote {
     upvotes:number
     downvotes:number
     showDetails:boolean
+    creation:Date
 
     constructor(id:number,quote:string,author:string,person:string){
         this.id = id
@@ -15,5 +16,6 @@ export class Quote {
         this.showDetails = false
         this.upvotes = 0
         this.downvotes = 0
+        this.creation = new Date()
     }
 }

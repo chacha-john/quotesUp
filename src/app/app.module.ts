@@ -8,6 +8,7 @@ import { QuoteDetailsComponent } from './components/quote-details/quote-details.
 import { QuoteFormComponent } from './components/quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
 import { RandomQuoteDirective } from './directives/random-quote.directive';
+import { DateCountPipe } from './pipes/date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { RandomQuoteDirective } from './directives/random-quote.directive';
     QuoteDetailsComponent,
     QuoteFormComponent,
     RandomQuoteDirective,
+    DateCountPipe,
   ],
   imports: [
     BrowserModule,

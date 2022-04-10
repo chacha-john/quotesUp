@@ -2,4 +2,5 @@
   <span>Author: {{quote.author}}</span>
   <span (click)="upVote()" class="text-info"><i class="fa-solid fa-thumbs-up"></i> {{quote.upvotes}}</span>
   <span (click)="downVote()" class="text-danger"><i class="fa-solid fa-thumbs-down"></i> {{quote.downvotes}}</span>
+  <span><i class="fa-solid fa-stopwatch"></i> {{quote.creation|dateCount}} days ago.</span>
 </div>
