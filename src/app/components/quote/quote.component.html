@@ -1,15 +1,18 @@
-<div class="container-fluid col-md-12 mt-2">
-    <h2 class="text-center">Insight that Inspires</h2>
-    <ul *ngFor="let quote of quotes, let i = index">
-        <li class="row">
-            <div class="quote col-md-9">"{{quote.quote}}."</div>
-            <div class="details col-md-2 text-center">
-                <p (click)="toggleDetails(i)" class="text-primary">View quote details...</p>
-            </div>
-            <div class="close col-md-1 text-danger text-center">
-                <p (click)="deleteQuote(i)">X</p>
-            </div>
-            <app-quote-details  class="col-md-12 fw-bold" *ngIf="quote.showDetails" [quote]="quote"></app-quote-details>
-        </li>
-    </ul>
+<div class="row">
+    <div class="container-fluid col-md-8 mt-2">
+        <h2 class="text-center">Insight that Inspires</h2>
+        <ul *ngFor="let quote of quotes, let i = index">
+            <li class="row">
+                <div class="quote col-md-9">"{{quote.quote}}."</div>
+                <div class="details col-md-2 text-center">
+                    <p (click)="toggleDetails(i)" class="text-primary">View details...</p>
+                </div>
+                <div class="close col-md-1 text-danger text-center">
+                    <p (click)="deleteQuote(i)">X</p>
+                </div>
+                <app-quote-details  class="col-md-12 fw-bold" *ngIf="quote.showDetails" [quote]="quote"></app-quote-details>
+            </li>
+        </ul>
+    </div>
+    <div class="contianer-fluid col-md-4 mt-2"></div>
 </div>
