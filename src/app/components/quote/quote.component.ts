@@ -28,10 +28,10 @@ export class QuoteComponent implements OnInit {
   constructor() { 
     this.quotes = [
       new Quote(1,"small daily, seeming insignificant, improvements when done consistently over time yield staggerring results","robin sharma","chacha"),
-      new Quote(1,"small daily, seeming insignificant, improvements when done consistently over time yield staggerring results","robin sharma","chacha"),
-      new Quote(1,"small daily, seeming insignificant, improvements when done consistently over time yield staggerring results","robin sharma","chacha"),
-      new Quote(1,"small daily, seeming insignificant, improvements when done consistently over time yield staggerring results","robin sharma","chacha"),
-      new Quote(1,"small daily, seeming insignificant, improvements when done consistently over time yield staggerring results","robin sharma","chacha")
+      new Quote(2,"small daily, seeming insignificant, improvements when done consistently over time yield staggerring results","robin sharma","chacha"),
+      // new Quote(3,"small daily, seeming insignificant, improvements when done consistently over time yield staggerring results","robin sharma","chacha"),
+      // new Quote(4,"small daily, seeming insignificant, improvements when done consistently over time yield staggerring results","robin sharma","chacha"),
+      // new Quote(5,"small daily, seeming insignificant, improvements when done consistently over time yield staggerring results","robin sharma","chacha")
     ]
   }
 

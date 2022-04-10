@@ -10,6 +10,24 @@ export class QuoteDetailsComponent implements OnInit {
 
   @Input() quote!: Quote
 
+  upVote(){
+    if(this.quote.upvotes==1){
+      this.quote.upvotes=0
+    }else if(this.quote.upvotes==0){
+      this.quote.upvotes = + 1
+      this.quote.downvotes = 0
+    }
+    
+  }
+  downVote(){
+    if(this.quote.downvotes==1){
+      this.quote.downvotes=0
+    }else if(this.quote.downvotes==0){
+      this.quote.downvotes = + 1
+      this.quote.upvotes = 0
+    }
+    
+  }
   constructor() { }
 
   ngOnInit(): void {

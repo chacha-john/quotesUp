@@ -14,3 +14,6 @@ ul{
 .details p, .close{
     cursor: pointer;
 }
+.row{
+    overflow-y: hidden;
+}

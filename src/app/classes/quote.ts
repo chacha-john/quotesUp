@@ -3,6 +3,8 @@ export class Quote {
     quote:string
     author:string
     person:string
+    upvotes:number
+    downvotes:number
     showDetails:boolean
 
     constructor(id:number,quote:string,author:string,person:string){
@@ -11,5 +13,7 @@ export class Quote {
         this.author = author
         this.person = person
         this.showDetails = false
+        this.upvotes = 0
+        this.downvotes = 0
     }
 }

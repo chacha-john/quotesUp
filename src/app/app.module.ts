@@ -7,6 +7,7 @@ import { QuoteComponent } from './components/quote/quote.component';
 import { QuoteDetailsComponent } from './components/quote-details/quote-details.component';
 import { QuoteFormComponent } from './components/quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
+import { RandomQuoteDirective } from './directives/random-quote.directive';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FormsModule } from '@angular/forms';
     QuoteComponent,
     QuoteDetailsComponent,
     QuoteFormComponent,
+    RandomQuoteDirective,
   ],
   imports: [
     BrowserModule,
