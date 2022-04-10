@@ -1,1 +1,25 @@
-<p>quote-form works!</p>
+<div class="container-fluid mt-2">
+    <div class="random">
+        <h4 class="text-center">Quote of the day</h4>
+        <hr>
+    </div>
+    <div class="newQuote">
+        <h4 class="text-center">Add a new quote</h4>
+        <hr>
+        <form #quoteForm="ngForm" (ngSubmit)="submitQuote()">
+            <div class="form-group">
+                <label for="quote">Enter new quote: </label>
+                <input class="form-control" [(ngModel)]="newQuote.quote" required type="text" #name="ngModel" name="quote" id="quote">
+            </div>
+            <div class="form-group">
+                <label for="author">Author: </label>
+                <input type="text" name="author" [(ngModel)]="newQuote.author" required id="author" #author="ngModel" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="person">Enter your name: </label>
+                <input type="text" name="person" required [(ngModel)]="newQuote.person" id="person" #person="ngModel" class="form-control">
+            </div>
+            <button class="btn btn-primary mt-2" type="submit">Add Quote</button>
+        </form>
+    </div>
+</div>

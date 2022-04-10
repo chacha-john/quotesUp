@@ -20,6 +20,11 @@ export class QuoteComponent implements OnInit {
     }
     // this.toDelete.emit(toRemove)
   }
+  addNewQuote(quote:Quote){
+    let quoteLength = this.quotes.length
+    quote.id = quoteLength+1
+    this.quotes.push(quote)
+  }
   constructor() { 
     this.quotes = [
       new Quote(1,"small daily, seeming insignificant, improvements when done consistently over time yield staggerring results","robin sharma","chacha"),
