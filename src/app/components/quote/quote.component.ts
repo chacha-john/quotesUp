@@ -25,7 +25,8 @@ export class QuoteComponent implements OnInit {
     quote.id = quoteLength+1
     this.quotes.push(quote)
   }
-  highest = Math.max(...this.quotes.map(quote=>quote.upvotes))
+  arr: number[] = this.quotes.map(quote=>quote.upvotes)
+  highest = Math.max(...this.arr)
   constructor() { 
     this.quotes = [
       new Quote(1,"small daily, seeming insignificant, improvements when done consistently over time yield staggerring results","robin sharma","chacha"),

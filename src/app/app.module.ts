@@ -7,7 +7,6 @@ import { QuoteComponent } from './components/quote/quote.component';
 import { QuoteDetailsComponent } from './components/quote-details/quote-details.component';
 import { QuoteFormComponent } from './components/quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
-import { RandomQuoteDirective } from './directives/random-quote.directive';
 import { DateCountPipe } from './pipes/date-count.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -18,7 +17,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     QuoteComponent,
     QuoteDetailsComponent,
     QuoteFormComponent,
-    RandomQuoteDirective,
     DateCountPipe,
     HighlightDirective,
     NavbarComponent,
